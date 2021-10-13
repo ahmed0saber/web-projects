@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheel Of Fortune</title>
     <link rel="shortcut icon" href="wheel.png" />
     <style>
@@ -130,6 +131,40 @@
         text-align: center;
         margin: 5px 0px 25px 0px;
       }
+      @media (max-width: 650px) {
+        #app{
+          width: 300px;
+          height: 300px;
+        }
+        .marker{
+          left: 128px;
+          width: 46px;
+        }
+        .button{
+          width: 200px;
+          height: 45px;
+          font-size: 22px;
+          font-family: Times New Roman;
+        }
+        #alert{
+          display: none;
+          padding: 10px;
+          height: 270px;
+          width: 280px;
+          background-color:#fff;
+          border-radius: 10px;
+          position: absolute;
+          top: 40px;
+          left: calc(50% - 152px);
+          border-width: 2px;
+        }
+        #alert #title{
+          font-size: 20px;
+        }
+        #alert #info{
+          font-size: 17px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -138,8 +173,8 @@
       <p id="info">Description</p>
     </div>
     <div id="app">
-      <img class="marker" src="marker.png" />
-      <img class="wheel" src="wheel.png" />
+      <img class="marker" src="https://raw.githubusercontent.com/ahmed0saber/web-projects/main/wheel-of-fortune/marker.png"/>
+      <img class="wheel" src="https://raw.githubusercontent.com/ahmed0saber/web-projects/main/wheel-of-fortune/wheel.png" />
       <button class="button">Start</button>
     </div>
     <div id="alert">
