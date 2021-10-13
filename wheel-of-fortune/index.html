@@ -48,7 +48,7 @@
         font-family: sans-serif;
         font-size:24px;
         border: 2px dashed #000f;
-        margin: 40px auto;
+        margin: 20px auto;
         cursor: pointer;
         animation: colorize 2s linear infinite;
       }
@@ -82,13 +82,13 @@
       }
       #alert{
         display: none;
-        height: 180px;
-        width: 260px;
+        height: 270px;
+        width: 390px;
         background-color:#fff;
         border-radius: 10px;
         position: absolute;
         top: 40px;
-        left: calc(50% - 154px);
+        left: calc(50% - 229px);
         z-index: 10;
         border: 4px solid #0775;
         padding: 20px;
@@ -96,13 +96,13 @@
       }
       #title{
         font-size:30px;
-        padding: 0;
+        margin: 5px;
         font-weight:bold;
         font-style:italic;
       }
       #info{
         font-size:20px;
-        padding: 0;
+        margin: 5px;
         font-style:italic;
       }
       #gift{
@@ -110,6 +110,7 @@
         font-weight:bold;
       }
       .btn{
+        margin: 15px;
         width: 150px;
         height: 40px;
         border-radius: 19px;
@@ -125,9 +126,17 @@
       .btn:hover{
         opacity: 0.8;
       }
+      #above{
+        text-align: center;
+        margin: 5px 0px 25px 0px;
+      }
     </style>
   </head>
   <body>
+    <div id="above">
+      <p id="title">Title</p>
+      <p id="info">Description</p>
+    </div>
     <div id="app">
       <img class="marker" src="marker.png" />
       <img class="wheel" src="wheel.png" />
