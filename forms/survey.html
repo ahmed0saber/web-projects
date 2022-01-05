@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <form>
+                <h1>Survey Form</h1>
+                <p>Answer the following questions to continue.</p>
+                <label>Enter your name:</label>
+                <input type="text" class="txt" placeholder="Full Name">
+                <label>Upload your picture:</label>
+                <input type="file" class="txt">
+                <label>Enter your age:</label>
+                <input type="number" class="txt" placeholder="Age">
+                <label>Enter your address:</label>
+                <input type="text" class="txt" placeholder="Address">
+                <label>Enter your phone number:</label>
+                <input type="tel" class="txt" placeholder="Phone Number">
+                <label>Enter your Feedback:</label>
+                <textarea class="txt" placeholder="Feedback"></textarea>
+                <label>Rate our service:</label>
+                <input type="range" class="txt" min="0" max="10" step="1" value="0">
+                <label>Enter your registration date:</label>
+                <input type="date" class="txt">
+                <label>Enter your registration time:</label>
+                <input type="time" class="txt">
+                <label>Enter your website url:</label>
+                <input type="url" class="txt" placeholder="www.example.com">
+                <label>Pick your favorite color:</label>
+                <input type="color" class="color" placeholder="Address"><br>
+                <label>Which form do you like ?</label><br>
+                <input type="checkbox" id="choice1"> <label for="choice1">Signup Form</label><br>
+                <input type="checkbox" id="choice2"> <label for="choice2">Login Form</label><br>
+                <input type="checkbox" id="choice3"> <label for="choice3">Contact Form</label><br>
+                <input type="checkbox" id="choice4"> <label for="choice4">Survey Form</label><br>
+                <label>Do you agree to our terms ?</label><br>
+                <input type="radio" name="terms" id="yes"> <label for="yes">Yes I agree</label><br>
+                <input type="radio" name="terms" id="no"> <label for="no">No I don't agree</label><br>
+                <input type="submit" class="btn" value="Send">
+                <input type="reset" class="btn reset" value="Reset">
+            </form>
+            <label>Don't have account ? <a href="./index.html">Create one</a></label><br>
+            <label>Already have account ? <a href="./login.html">Log in</a></label><br>
+            <label>Have any problem ? <a href="./contact.html">Contact us</a></label><br>
+        </section>
+    </main>
+</body>
+</html>
