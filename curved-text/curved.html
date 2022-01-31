@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="curved">Ahmed Saber</p>
+</body>
+<script src="./circletype.min.js"></script>
+<script>
+    /*     CURVED TEXT "Our Products"     */
+    curved = document.getElementsByClassName("curved");
+    for(var i=0; i<curved.length; i++){
+        new CircleType(curved[i]).radius(100);
+    }
+</script>
+</html>
